@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* padding-block-start: 50px; */
+    padding: 4em 0 2em 2em;
+    inline-size: 25%;
+    block-size: 100%;
+    background-color: #fff;
+    position: relative;
+}
+h2{
+    margin-inline-start: 70px;
+    margin-block-end: 40px;
+}
+.app_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.group_cross_btn:hover{
+    color: #db2e2e;
+}
+
+.group_cross_btn{
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 .5em 0 0;
+}
+
+.group_box{
+    block-size: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-inline-end: -17px;
+}
+
+.group_add_btn:hover{
+    color: #000000;
+    background-color: #c3bfbf;
+}
+
+.group_add_btn{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 1em;
+    /* padding: .2em 2em; */
+    background-color: #000000;
+    border-radius: 20px;
+    position: absolute;
+    inset-block-end: 10px;
+    margin-inline-start: 70%;
+}
+
+
+@media only screen and (max-inline-size: 770px){
+    .container{
+        inline-size: 50%;
+    }
+}
+
+@media only screen and (max-inline-size: 526px){
+    .container{
+        position: absolute;
+        inline-size: 100%;
+        z-index: 1;
+    }
+    .group_box{
+        margin: 0;
+    }
+}
+.circularButton {
+    inline-size: 55px;
+    block-size: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3544e7; 
+    border: none;
+    cursor: pointer;
+}
+
+.circularButton svg {
+    color: #ffffff; /* Add your desired icon color */
+    inline-size: 40px; /* Adjust the icon size if needed */
+    block-size: 40px;
+    font-Weight: 'bold';
+    
+}

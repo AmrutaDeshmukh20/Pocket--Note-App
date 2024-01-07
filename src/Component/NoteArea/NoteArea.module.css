@@ -1,0 +1,98 @@
+.container{
+    block-size: 100%;
+    inline-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 0 10px;
+    background-color:#DAE5F5;
+}
+
+.group_toggle_btn :hover{
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+}
+.group_toggle_btn{
+    margin: 0 .5em;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700
+}
+
+.active_group{
+    display: flex;
+    block-size: 80px;
+    background-color:#001F8B;
+    color: white;
+}
+.active_group div:hover{
+    background-color: #2F2F2F;
+}
+
+.note_text_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    block-size: 100%;
+}
+
+.note_box{
+    block-size: 65vh;
+    inline-size: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.textarea{
+    position: relative;
+    inline-size: 100%;
+    block-size: 30%;
+    align-self: flex-end;
+    padding: 1em;
+    background-color:#001F8B;
+    border-radius: 0 0 0 10px;
+}
+.textarea textarea{
+    block-size: 100%;
+    inline-size: 100%;
+    position: relative;
+    border: none;
+    resize: none;
+    padding: .5em .8em;
+    font-size: 1.25rem;
+    border-radius: 9px;
+}
+.textarea button{
+    position: absolute;
+    inset-inline-end: 4%;
+    inset-block-end: 15%;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    color:#001F8B;
+    rotate: 44deg;
+}
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  inline-size: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#FFFFFF; /* Set the color of the scrollbar thumb */
+  border-radius: 4.5px; /* Add rounded corners to the thumb */
+  block-size: 5.5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:#000000; /* Set the color of the scrollbar track */
+  border-radius: 5.5px; /* Add rounded corners to the track */
+}
+
+
+@media only screen and (max-inline-size: 526px){
+    .textarea{
+        block-size: 25%;
+    }
+}

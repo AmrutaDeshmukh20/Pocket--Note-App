@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    align-items: center;
+    padding: .5em;
+    border-radius: 23px 23px 23px 23px;
+    inline-size: 270px;
+}
+
+.container:hover{
+    background-color: #faf6f0;
+}
+
+.container h3{
+    padding: .7em;
+    color: #fff;
+    border-radius: 30px;
+    margin: 0 1em 0 0;
+    
+}
+
+.container p{
+    font-size: 1.28rem;
+    font-weight: 600;
+  
+}
+
+.active_grp, .active_grp:hover{
+    background-color:#dad8d7;
+}
+/* Responsive Styling */
+@media only screen and (max-inline-size: 600px) {
+    .container {
+        inline-size: 100%;
+        margin-block-end: 1em;
+    }
+}
