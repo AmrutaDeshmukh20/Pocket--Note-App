@@ -63,5 +63,4 @@ The Note-Taking App is a versatile and user-friendly application designed for bo
   
 ## Author
 
-- Linkdin Profile - www.linkedin.com/in/rehanlukade
-- Twitter - https://twitter.com/Rehanlukade
+
